@@ -39,4 +39,22 @@ Resolve Conflict
 
 - git checkout dev
 - git merge feature2
-- git push 
+- git push
+
+# Forking
+
+- Fork Repo
+- git remote -v
+- add upstream to forked repo, example: git remote add upstream git@github.com:GeorgeZudikhin/CI_Fork.git
+- git remote -v
+- git checkout -b feature
+- echo "this is my new feature" >> .\main_commit.txt
+- git add .
+- git commit -m "new feature finished"
+- git checkout main
+- git pull upstream main
+- git checkout feature
+- git merge main
+- git checkout main
+- git merge feature
+- git push
